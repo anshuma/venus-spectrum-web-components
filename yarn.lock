@@ -8278,7 +8278,7 @@
     "@storybook/web-components" "7.0.25"
     magic-string "^0.27.0"
 
-"@storybook/web-components@7.0.25", "@storybook/web-components@^7.0.25":
+"@storybook/web-components@7.0.25", "@storybook/web-components@^7.0.0", "@storybook/web-components@^7.0.25":
   version "7.0.25"
   resolved "https://registry.yarnpkg.com/@storybook/web-components/-/web-components-7.0.25.tgz#624fbe98f81b330e25ec3e9c4541fe37c5d05cce"
   integrity sha512-Y2qPehxxmAFXiB5SZj10OIppgEHhNhs9NY1qUqgZtYBKY0/CIlfwT1iueu9WcvgMUY1ohpz3eGAC3pkzZImYfw==
@@ -27626,6 +27626,14 @@ storybook-builder-wds@^0.1.0:
     rollup "^3.25.1"
     rollup-plugin-external-globals "^0.7.3"
     slash "^5.1.0"
+
+storybook-web-components-wds@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/storybook-web-components-wds/-/storybook-web-components-wds-0.1.0.tgz#de911f24ea5b9da44e2db97b6e36d09911dae4a4"
+  integrity sha512-+TPoDPX7rfUBQMG4nzgwDuu37mSyl5gj4Fb/2LGOwlP2A2mMwfUFVeeb9p5tGtQm5cM3gMXRmRQLdUWoy2qqsg==
+  dependencies:
+    "@storybook/web-components" "^7.0.0"
+    storybook-builder-wds "^0.1.0"
 
 storybook@^7.0.25:
   version "7.0.25"
