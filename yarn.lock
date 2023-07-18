@@ -2500,11 +2500,11 @@
   integrity sha512-tWZNBIS1CoekcwlMuyG2mr0a1Wo5lb5lEHwwWvZo+5GLgr3e9LLDTtmgtCWEwBpXMkxn9D+2W9j2FY6eZQq0tA==
 
 "@internationalized/date@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@internationalized/date/-/date-3.2.0.tgz#1d266e5e5543a059cf8cca9b954fa033c3e58a75"
-  integrity sha512-VDMHN1m33L4eqPs5BaihzgQJXyaORbMoHOtrapFxx179J8ucY5CRIHYsq5RRLKPHZWgjNfa5v6amWWDkkMFywA==
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@internationalized/date/-/date-3.3.0.tgz#90386d4b4e707f28507d1a1b3cc0e162ad5ee038"
+  integrity sha512-qfRd7jCIgUjabI8RxeAsxhLDRS1u8eUPX96GB5uBp1Tpm6YY6dVveE7YwsTEV6L4QOp5LKFirFHHGsL/XQwJIA==
   dependencies:
-    "@swc/helpers" "^0.4.14"
+    "@swc/helpers" "^0.5.0"
 
 "@internationalized/number@^3.1.0":
   version "3.1.2"
@@ -5576,10 +5576,15 @@
   resolved "https://registry.yarnpkg.com/@spectrum-css/textfield/-/textfield-6.0.7.tgz#85c337966bf71d211c27c33eb3741d22200cd9b3"
   integrity sha512-KCEJYr/bX+LwAZ08IcbQCVD4X5oo+LUWVA69Ndf81B3aNE83Egl0VyrlcdS5U8zbufNk0ltSZkCW0Nq6NdpNaQ==
 
-"@spectrum-css/thumbnail@^3.0.17":
-  version "3.0.17"
-  resolved "https://registry.yarnpkg.com/@spectrum-css/thumbnail/-/thumbnail-3.0.17.tgz#1cd2f00e5b374aa0617ba3061c325f5174598ad3"
-  integrity sha512-EuL9dpniOcm8KHp9s+7bbyphrnjuj+VnjlgI8YFZwivTXizId3di4t9uDgoLuooYef5+h21xs1wE4ofGraXzKg==
+"@spectrum-css/textfield@^6.0.7":
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/textfield/-/textfield-6.0.7.tgz#85c337966bf71d211c27c33eb3741d22200cd9b3"
+  integrity sha512-KCEJYr/bX+LwAZ08IcbQCVD4X5oo+LUWVA69Ndf81B3aNE83Egl0VyrlcdS5U8zbufNk0ltSZkCW0Nq6NdpNaQ==
+
+"@spectrum-css/thumbnail@^3.0.15":
+  version "3.0.15"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/thumbnail/-/thumbnail-3.0.15.tgz#6c1a15f85cd309b75e1809813d834e1111b863ae"
+  integrity sha512-UnQDLrDl28VNVZCmksg5zVu65nWKMDpqDvb5QkOlslJrmouQ8LuB7RCEHUlEwJ/f4adkZ6EOjS09B6OZp02MDg==
 
 "@spectrum-css/toast@^9.0.42":
   version "9.0.42"
@@ -5659,7 +5664,7 @@
     magic-string "^0.25.0"
     string.prototype.matchall "^4.0.6"
 
-"@swc/helpers@0.5.1":
+"@swc/helpers@0.5.1", "@swc/helpers@^0.5.0":
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.1.tgz#e9031491aa3f26bfcc974a67f48bd456c8a5357a"
   integrity sha512-sJ902EfIzn1Fa+qYmjdQqh8tPsoxyBz+8yBKC2HKUxyezKJFwPGOn7pv4WY6QuQW//ySQi5lJjA/ZT9sNWWNTg==
