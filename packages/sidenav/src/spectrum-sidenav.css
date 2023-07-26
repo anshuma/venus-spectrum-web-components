@@ -18,7 +18,7 @@ governing permissions and limitations under the License.
     --spectrum-sidenav-focus-ring-gap: var(--spectrum-focus-indicator-gap);
     --spectrum-sidenav-focus-ring-color: var(--spectrum-focus-indicator-color);
     --spectrum-sidenav-min-height: var(--spectrum-component-height-100);
-    --spectrum-sidenav-width: var(--spectrum-side-navigation-width);
+    --spectrum-sidenav-width: 100%;
     --spectrum-sidenav-min-width: var(--spectrum-side-navigation-minimum-width);
     --spectrum-sidenav-max-width: var(--spectrum-side-navigation-maximum-width);
     --spectrum-sidenav-border-radius: var(--spectrum-corner-radius-100);
@@ -32,9 +32,6 @@ governing permissions and limitations under the License.
         --spectrum-component-top-to-workflow-icon-100
     );
     --spectrum-sidenav-top-to-label: var(--spectrum-component-top-to-text-100);
-    --spectrum-sidenav-bottom-to-label: var(
-        --spectrum-component-bottom-to-text-100
-    );
     --spectrum-sidenav-start-to-content-second-level: var(
         --spectrum-side-navigation-second-level-edge-to-text
     );
@@ -90,21 +87,19 @@ governing permissions and limitations under the License.
     --spectrum-sidenav-text-font-weight: var(--spectrum-regular-font-weight);
     --spectrum-sidenav-text-font-style: var(--spectrum-default-font-style);
     --spectrum-sidenav-text-font-size: var(--spectrum-font-size-100);
-    --spectrum-sidenav-text-line-height: 1.2;
     --spectrum-sidenav-top-level-font-family: var(
         --spectrum-sans-font-family-stack
     );
     --spectrum-sidenav-top-level-font-weight: var(--spectrum-bold-font-weight);
     --spectrum-sidenav-top-level-font-style: var(--spectrum-default-font-style);
     --spectrum-sidenav-top-level-font-size: var(--spectrum-font-size-100);
-    --spectrum-sidenav-top-level-line-height: 1.2;
     --spectrum-sidenav-header-font-family: var(
         --spectrum-sans-font-family-stack
     );
     --spectrum-sidenav-header-font-weight: var(--spectrum-medium-font-weight);
     --spectrum-sidenav-header-font-style: var(--spectrum-default-font-style);
     --spectrum-sidenav-header-font-size: var(--spectrum-font-size-75);
-    --spectrum-sidenav-header-line-height: 1.2;
+    --spectrum-sidenav-text-line-height: var(--spectrum-line-height-100);
 }
 :host:lang(ja),
 :host:lang(ko),
