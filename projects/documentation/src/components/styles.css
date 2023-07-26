@@ -282,10 +282,6 @@ sp-sidenav-item:not([tabindex]) {
     list-style-type: none;
 }
 
-docs-page > sp-sidenav {
-    content-visibility: auto;
-}
-
 docs-page > sp-sidenav-item {
     content-visibility: auto;
     contain-intrinsic-size: 40px;
