@@ -39,7 +39,7 @@ import { SidenavItem } from '@spectrum-web-components/sidenav';
 ## Multi-level
 
 ```html
-<sp-sidenav>
+<sp-sidenav variant="multilevel">
     <sp-sidenav-item value="Styles" label="Styles" expanded>
         <sp-sidenav-item value="Color" label="Color">
         </sp-sidenav-item>
