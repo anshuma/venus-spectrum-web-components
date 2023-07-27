@@ -32,6 +32,9 @@ governing permissions and limitations under the License.
         --spectrum-component-top-to-workflow-icon-100
     );
     --spectrum-sidenav-top-to-label: var(--spectrum-component-top-to-text-100);
+    --spectrum-sidenav-bottom-to-label: var(
+        --spectrum-side-navigation-bottom-to-text
+    );
     --spectrum-sidenav-start-to-content-second-level: var(
         --spectrum-side-navigation-second-level-edge-to-text
     );
@@ -87,19 +90,21 @@ governing permissions and limitations under the License.
     --spectrum-sidenav-text-font-weight: var(--spectrum-regular-font-weight);
     --spectrum-sidenav-text-font-style: var(--spectrum-default-font-style);
     --spectrum-sidenav-text-font-size: var(--spectrum-font-size-100);
+    --spectrum-sidenav-text-line-height: var(--spectrum-line-height-100);
     --spectrum-sidenav-top-level-font-family: var(
         --spectrum-sans-font-family-stack
     );
     --spectrum-sidenav-top-level-font-weight: var(--spectrum-bold-font-weight);
     --spectrum-sidenav-top-level-font-style: var(--spectrum-default-font-style);
     --spectrum-sidenav-top-level-font-size: var(--spectrum-font-size-100);
+    --spectrum-sidenav-top-level-line-height: var(--spectrum-line-height-100);
     --spectrum-sidenav-header-font-family: var(
         --spectrum-sans-font-family-stack
     );
     --spectrum-sidenav-header-font-weight: var(--spectrum-medium-font-weight);
     --spectrum-sidenav-header-font-style: var(--spectrum-default-font-style);
     --spectrum-sidenav-header-font-size: var(--spectrum-font-size-75);
-    --spectrum-sidenav-text-line-height: var(--spectrum-line-height-100);
+    --spectrum-sidenav-header-line-height: var(--spectrum-line-height-100);
 }
 #list:lang(ja),
 #list:lang(ko),
