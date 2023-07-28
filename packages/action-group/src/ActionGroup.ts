@@ -363,7 +363,9 @@ export class ActionGroup extends SizedMixin(SpectrumElement, {
             if (this.static || changes?.get('static')) {
                 button.static = this.static;
             }
-            button.selected = this.selected.includes(button.value);
+            if (this.selects) {
+                button.selected = this.selected.includes(button.value);
+            }
             if (this.size) {
                 button.size = this.size;
             }
@@ -386,14 +388,16 @@ export class ActionGroup extends SizedMixin(SpectrumElement, {
             return acc;
         }, []);
         this.buttons = buttons as ActionButton[];
-        // <selected> element merges selected so following paradigm here
-        const currentlySelectedButtons: string[] = [];
-        this.buttons.forEach((button: ActionButton) => {
-            if (button.selected) {
-                currentlySelectedButtons.push(button.value);
-            }
-        });
-        this.setSelected(this.selected.concat(currentlySelectedButtons));
+        if (this.selects) {
+            // <selected> element merges selected so following paradigm here
+            const currentlySelectedButtons: string[] = [];
+            this.buttons.forEach((button: ActionButton) => {
+                if (button.selected) {
+                    currentlySelectedButtons.push(button.value);
+                }
+            });
+            this.setSelected(this.selected.concat(currentlySelectedButtons));
+        }
         this.manageChildren();
         this.manageSelects();
     };
