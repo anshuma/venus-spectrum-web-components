@@ -120,6 +120,37 @@ ActiveOverlay.prototype.renderTheme = function (
     `;
 };
 
+export const locales = [
+    'cs-CZ',
+    'cy-GB',
+    'da-DK',
+    'de-DE',
+    'en-GB',
+    'en-US',
+    'es-ES',
+    'fi-FI',
+    'fr-FR',
+    'hu-HU',
+    'it-IT',
+    'ja-JP',
+    'ko-KR',
+    'nb-NO',
+    'nl-NL',
+    'pl-PL',
+    'pt-BR',
+    'ru-RU',
+    'sv-SE',
+    'tr-TR',
+    'uk-UA',
+    'zh-Hans-CN',
+    'zh-Hans-CN-u-nu-hanidec',
+    'zh-Hant-TW',
+    'zz-ZY',
+    'zz-ZZ',
+] as const;
+
+export const defaultLocale = 'en-US';
+
 export class StoryDecorator extends SpectrumElement {
     static override get styles() {
         return [
@@ -212,6 +243,9 @@ export class StoryDecorator extends SpectrumElement {
     @property({ type: Boolean, attribute: 'reduce-motion', reflect: true })
     public reduceMotion = window.__swc_hack_knobs__.defaultReduceMotion;
 
+    @property()
+    public override locale: typeof locales[number] = defaultLocale;
+
     @property({ type: Boolean, reflect: true })
     public screenshot = false;
 
@@ -267,6 +301,10 @@ export class StoryDecorator extends SpectrumElement {
         }
     }
 
+    private updateLocale({ target }: Event & { target: Picker }): void {
+        this.locale = target.value as typeof locales[number];
+    }
+
     protected handleKeydown(event: KeyboardEvent): void {
         const path = event.composedPath();
         const hasInput = path.some(
@@ -287,6 +325,7 @@ export class StoryDecorator extends SpectrumElement {
                 color=${this.color}
                 scale=${this.scale}
                 dir=${this.direction}
+                lang=${this.locale}
                 part="container"
                 @keydown=${this.handleKeydown}
             >
@@ -324,7 +363,8 @@ export class StoryDecorator extends SpectrumElement {
         return html`
             <div class="manage-theme" part="controls">
                 ${this.themeControl} ${this.colorControl} ${this.scaleControl}
-                ${this.dirControl} ${this.reduceMotionControl}
+                ${this.dirControl} ${this.localeControl}
+                ${this.reduceMotionControl}
             </div>
         `;
     }
@@ -406,6 +446,26 @@ export class StoryDecorator extends SpectrumElement {
             >
                 Reduce Motion
             </sp-switch>
+        `;
+    }
+
+    private get localeControl(): TemplateResult {
+        return html`
+            <sp-field-label for="local">Locale</sp-field-label>
+            <sp-picker
+                id="dir"
+                label="Locale"
+                placement="top"
+                quiet
+                .value=${this.locale}
+                @change=${this.updateLocale}
+            >
+                ${locales.map(
+                    (locale) => html`
+                        <sp-menu-item value=${locale}>${locale}</sp-menu-item>
+                    `
+                )}
+            </sp-picker>
         `;
     }
 
