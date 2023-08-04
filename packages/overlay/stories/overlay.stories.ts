@@ -770,6 +770,7 @@ class ComplexModalReady extends HTMLElement {
 
     handleTriggerOpened = async (): Promise<void> => {
         await nextFrame();
+        await nextFrame();
 
         const picker = document.querySelector('#test-picker') as Picker;
         picker.addEventListener('sp-opened', this.handlePickerOpen);
@@ -777,6 +778,9 @@ class ComplexModalReady extends HTMLElement {
     };
 
     handlePickerOpen = async (): Promise<void> => {
+        await nextFrame();
+        await nextFrame();
+
         const picker = document.querySelector('#test-picker') as Picker;
         const actions = [nextFrame, picker.updateComplete];
 
