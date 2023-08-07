@@ -5455,10 +5455,10 @@
   resolved "https://registry.yarnpkg.com/@spectrum-css/popover/-/popover-6.0.60.tgz#884d8ceb2fdea5771d76c60a17065a24208aa3f0"
   integrity sha512-RkQ1W+cmfFLMlYLA6nMQhgRYoDkT0i19Q4GvxLX7tp57NmjUlZX4lk4/N5VjRxdo2Ibn4F7MEwLaJn0HaJe07w==
 
-"@spectrum-css/progressbar@^3.0.54":
-  version "3.0.54"
-  resolved "https://registry.yarnpkg.com/@spectrum-css/progressbar/-/progressbar-3.0.54.tgz#540cabec4160ccf3ec79d9ab7a2da5954b852158"
-  integrity sha512-1+GpRb98sF81HZs+e64FjGkbCCluQ+fKNHZYMQoatbYs3wml0910piERmCy83Ry/9HFiAziJEoJPVU+ek8H4QA==
+"@spectrum-css/progressbar@^3.0.57":
+  version "3.0.59"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/progressbar/-/progressbar-3.0.59.tgz#0441dc31341589a383d5d8e52d4d5b9802edc942"
+  integrity sha512-wQErvSy+bjNVEZPsuiosT8o1M8938dhwY6zM9YvM3NvJGDFMCkqez6XVItX9xsL1cXz1Q8UAzVq6iZm22p+lew==
 
 "@spectrum-css/progresscircle@^2.0.53":
   version "2.0.53"
