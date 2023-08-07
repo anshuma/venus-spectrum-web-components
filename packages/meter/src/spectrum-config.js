@@ -51,9 +51,7 @@ const config = {
                 ...converter.enumerateAttributes(
                     [
                         ['spectrum-ProgressBar--sizeS', 's'],
-                        ['spectrum-ProgressBar--sizeM', 'm'],
                         ['spectrum-ProgressBar--sizeL', 'l'],
-                        ['spectrum-ProgressBar--sizeXL', 'xl'],
                     ],
                     'size'
                 ),
